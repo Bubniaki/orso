@@ -16,7 +16,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content" role="main">
         <div class="container">
             <div class="essays-grid" id="essaysGrid">
                 <!-- Cards serão inseridos aqui via JavaScript -->
@@ -25,7 +25,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <p class="footer-title">Site de Redações</p>
@@ -34,6 +34,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Script para adicionar o ano atual no rodapé -->
+    <script>
+        // Preencher o ano atual
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 
     <script src="main.js"></script>
 </body>
